@@ -4,79 +4,84 @@
         <meta charset="utf-8">
         <meta name="description" content="Landing Page : Bali">
         <meta name="Author" content="Crée par Roufeina Bali">
-        <meta rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Travel To Bali</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-
-                <H1>Efrei</H1>
-                <a href=#header>Home</a>
-                <a href=#monument1>Monument</a>
-                <a href=#footer>Contact</a>
-                <p>Roufeina Bali</p>
-
-            </nav>
-
-            <img id="header" src="Images/mainbali.jpg" alt="Photo d'un monument à Bali">
-
-            <div id="Centrale">
-                <h1> Bali - Indonasia</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus vero autem iusto adipisci error labore consequuntur illum esse nobis necessitatibus laborum, earum, eius ullam ea qui. Perferendis, ea officia?</p>
+        <nav>
+            <h1>
+                <img src="Images/log.svg" alt="Logo de l'entreprise"> Roufeina Bali
+            </h1>
+            <div id="menu">
+                <a href="#Top">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#attractions">À voir</a>
+                <a href="#Video">Video</a>
+                <a href="#contact">Contact</a>
             </div>
-
+        </nav>
+        <header id="Top">
+            <h1>Travel To Bali</h1>
+            <p>L'île des Dieux vous attend</p>
+            <a href="#about" class="btn">En savoir plus</a>
         </header>
         <main>
-            <section>
-                <div id="monument1">
-
-                    <h2>Nom du monument</h2>
-
-                    <img class="monument" src="Images/eau.jpg" alt="Ecrire d'escriptif photo">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptates qui quae iusto aliquam explicabo deserunt nemo consectetur optio, laborum dolores. Harum accusantium magni repellendus odit, officia optio quo quam.</p>
-
-                    <button> + </button>
-
-                </div>
-                <div id="monument2">
-
-                    <h2>Nom du monument</h2>
-                    
-                    <img class="monument" src="Images/eau.jpg" alt="Ecrire d'escriptif photo">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptates qui quae iusto aliquam explicabo deserunt nemo consectetur optio, laborum dolores. Harum accusantium magni repellendus odit, officia optio quo quam.</p>
-
-                    <button> + </button>
-
-                </div>
-                <div id="monument3">
-
-                    <h2>Nom du monument</h2>
-                    
-                    <img class="monument" src="Images/eau.jpg" alt="Ecrire d'escriptif photo">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptates qui quae iusto aliquam explicabo deserunt nemo consectetur optio, laborum dolores. Harum accusantium magni repellendus odit, officia optio quo quam.</p>
-
-                    <button> + </button>
-
+            <section id="about">
+                <h2>À propos de Bali</h2>
+                <div id="about-content">
+                    <img src="Images/eau.jpg" alt="Temple balinais">
+                    <p>Bali, surnommée l'île des Dieux, est un paradis tropical situé en Indonésie. 
+                    Avec ses plages de sable fin, ses temples ancestraux et sa culture vibrante, 
+                    Bali offre une expérience unique à chaque visiteur.<br>Des rizières en terrasses d'un vert émeraude aux cérémonies traditionnelles colorées, 
+                    chaque coin de l'île raconte une histoire fascinante.</p> <!-- Utilisation de ChatGPT pour le texte -->
                 </div>
             </section>
-            <section>
-                <h3>Gallery</h3>
-                <!-- Gallery Image -->
+            <section id="attractions">
+                <h2>À voir à Bali</h2>
+                <div id="attractions-grid">
+                    <div class="attraction-card">
+                        <img src="/Images/temple.jpeg" alt="Image d'un temples de Bali">
+                        <h3>Temples</h3>
+                        <p>Découvrez les magnifiques temples balinais ! </p>
+                    </div>
+                    <div class="attraction-card">
+                        <img src="/Images/Paysage.jpg" alt="Image des rizières de Bali">
+                        <h3>Rizières</h3>
+                        <p>Découvrez les magnifiques rizières de Bali ! </p>
+                    </div>
+                    <div class="attraction-card">
+                        <img src="/Images/hotel.jpg" alt="Image d'un hotel vue sur la nature balinaise">
+                        <h3>Paysage</h3>
+                        <p>Découvrez les magnifiques Paysages balinais ! </p>
+                    </div>
+              </div>
+            </section>
+            <section id="Video">
+                <h2>Video</h2>
+                <div id="Videos"> <!-- Utilisation d'un API pour simplifier sinon on peut télécharger une vidéo et l'ajouter depuis le local-->
+                    <iframe width="760" height="415" src="https://www.youtube.com/embed/BFS9n4B_2xA?si=XcNH5JVSfLVhYu9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </section>
         </main>
-        <Footer>
-            <!--Video-->
-            <div id="footer">
-                <p> Mettre un message ici </p>
-                <!-- Mettre un logo + redirection nom -->
+        <footer>
+            <div id="contact">
+                <h2>Contactez-nous</h2>
+                <form action="index.html" method="post">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
             </div>
-        </Footer>
+            <div id="copy">
+                <p>© 2024 Roufeina Bali</p>
+            </div>
+        </footer>
     </body>
 </html>
